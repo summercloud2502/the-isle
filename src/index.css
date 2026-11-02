@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family: 'Be Vietnam Pro', Arial, sans-serif;
+  color: #f1f3ee;
+  background: #080a08;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  font-smooth: always;
+  --bg: #080a08;
+  --surface: #111510;
+  --surface-2: #171d15;
+  --line: #293128;
+  --muted: #929b8c;
+  --green: #a6d936;
+  --green-light: #c2ed68;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; background: var(--bg); }
+body { min-width: 320px; min-height: 100vh; margin: 0; overflow-x: hidden; background: var(--bg); color: #f1f3ee; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+#root { width: 100%; min-height: 100vh; }
+::selection { color: #10170a; background: var(--green); }
