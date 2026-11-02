@@ -807,7 +807,7 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
 
                 <div className="download-progress-details">
                   <span>
-                    {(downloadProgress * 10.24).toFixed(1)} MB / 16 GB
+                    {(downloadProgress * 10.24 * 16).toFixed(1)} MB / 16 GB
                   </span>
                   <span>{(20 + Math.random() * 15).toFixed(1)} MB/s</span>
                 </div>
