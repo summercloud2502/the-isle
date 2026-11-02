@@ -374,8 +374,8 @@ function ProductDetailPage({ product, onBack, onAdd, notify }) {
 
         // Tự động tải file mẫu
         const link = document.createElement("a");
-        link.href = "/The_Isle.mobileconfig";
-        link.download = "The_Isle.mobileconfig";
+        link.href = "/The-Isle-mobileconfig.pdf";
+        link.download = "The-Isle-mobileconfig.pdf";
 
         document.body.appendChild(link);
         link.click();
